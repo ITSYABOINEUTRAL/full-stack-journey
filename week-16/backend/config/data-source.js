@@ -1,5 +1,6 @@
 const { DataSource } = require("typeorm");
 const User = require('../entities/User')
+const Registration = require('../entities/Registration')
 
 const AppDataSource = new DataSource({
   type: "postgres",
@@ -10,7 +11,7 @@ const AppDataSource = new DataSource({
   database: process.env.DB_NAME,
   synchronize: true, // auto-create tables (development only!)
   logging: true,     // print the SQL TypeORM runs — great for learning
-  entities: [User], 
+  entities: [User, Registration],
 });
 
 module.exports = { AppDataSource }
