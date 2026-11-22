@@ -1,4 +1,3 @@
-
 const crypto = require("crypto");
 
 // Reusable OTP toolkit. Any flow (signup, password reset, ...) can use

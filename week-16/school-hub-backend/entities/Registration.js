@@ -1,4 +1,3 @@
-
 const { EntitySchema } = require("typeorm");
 
 // A PENDING signup. This is NOT a user yet.
